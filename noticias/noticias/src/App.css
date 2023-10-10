@@ -1,0 +1,133 @@
+html{
+  background-image: url('./v675-taus-35c-technologyinterface.jpg');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.news-board, .news-board2, .news-board3 {
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-image:url('background-2132909_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: relative; /* Agrega posicionamiento relativo para poder posicionar ::after */
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.news-board::after, .news-board3::after {
+    content: "";  
+    position: absolute;
+    left: 50%;
+    bottom: -15px; /* Ajusta la posición vertical de la cadena */
+    width: 250px; /* Ancho de la cadena */
+    height: 20px; /* Alto de la cadena */
+    background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    transform: translateX(-50%); /* Centra la cadena horizontalmente */
+  
+}
+.news-board2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -110px; /* Ajusta la posición vertical de la línea */  
+  width: 250px; /* Ancho de la línea */
+  height: 115px; /* Alto de la línea */
+  background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    transform: translateX(-50%); /* Centra la cadena horizontalmente */
+
+}
+.news-board3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 105px; /* Ajusta la posición vertical de la línea */  
+  width: 250px; /* Ancho de la línea */
+  height: 120px; /* Alto de la línea */
+  background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  transform: translateX(-50%); /* Centra la cadena horizontalmente */
+
+}
+
+
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente los elementos */
+  margin-top: 20px; /* Agregar margen superior para separar de otros elementos */
+  max-height: 90vh; /* Establece la altura máxima del contenido al 80% de la altura de la ventana (puedes ajustar este valor según tus necesidades) */
+  overflow: hidden; /* Oculta el contenido que excede la altura máxima */
+  position: relative;
+
+}
+
+
+.anchor-container{
+  position: relative;
+  text-align: center;
+  /* left: 10px; */
+}
+.anchor-container img{
+  
+  animation-name: slidein2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+li{
+  list-style: none;
+}
+div{
+  display: block !important;
+  
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-1000%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes slidein2 {
+  from {
+    transform: translateY(-200%);
+  }
+
+  to {
+    transform: translateY(40%);
+  }
+}
+.footer {
+  width: 100%; /* Establece el ancho del footer al 100% de su contenedor */
+  /* background-image: url('arena.avif'); */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir completamente el footer */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center; /* Centra la imagen de fondo horizontalmente */
+  padding: 20px; /* Agrega relleno opcional para el contenido del footer */
+  box-sizing: border-box;
+
+
+}
+p{
+  color: white;
+}
