@@ -46,7 +46,7 @@ return (
         </ul>
     </div>
     <div className="anchor-container">
-        <img src="src/ancla_def.png" alt="_blank" />
+        <img src="src/imagenes/ancla_def.png" alt="_blank" />
     </div>
     </div>
     <div className="footer">

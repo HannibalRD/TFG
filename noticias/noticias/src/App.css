@@ -1,17 +1,12 @@
-html{
-  background-image: url('./v675-taus-35c-technologyinterface.jpg');
-}
 
-body {
-  margin: 0;
-  padding: 0;
-}
+
+
 
 .news-board, .news-board2, .news-board3 {
   animation-name: slidein;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  background-image:url('background-2132909_1280.jpg');
+  background-image:url('./imagenes/background-2132909_1280.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
@@ -30,7 +25,7 @@ body {
     bottom: -15px; /* Ajusta la posición vertical de la cadena */
     width: 250px; /* Ancho de la cadena */
     height: 20px; /* Alto de la cadena */
-    background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+    background-image: url('./imagenes/cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     transform: translateX(-50%); /* Centra la cadena horizontalmente */
@@ -43,7 +38,7 @@ body {
   bottom: -110px; /* Ajusta la posición vertical de la línea */  
   width: 250px; /* Ancho de la línea */
   height: 115px; /* Alto de la línea */
-  background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+  background-image: url('./imagenes/cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     transform: translateX(-50%); /* Centra la cadena horizontalmente */
@@ -56,7 +51,7 @@ body {
   bottom: 105px; /* Ajusta la posición vertical de la línea */  
   width: 250px; /* Ancho de la línea */
   height: 120px; /* Alto de la línea */
-  background-image: url('./cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
+  background-image: url('./imagenes/cadenas-removebg-preview.png'); /* Ruta de la imagen de la cadena */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente la cadena */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   transform: translateX(-50%); /* Centra la cadena horizontalmente */
