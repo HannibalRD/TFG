@@ -1,0 +1,67 @@
+*{
+  animation-delay: none;
+  border: 0cm !important;
+
+}
+/* img{
+  width: 350px !important;
+  height: 300px;
+} */
+.custom-card-2 img{
+  width: 27vw !important;
+}
+.custom-card-11 img{
+  width: 27vw !important;
+}
+.card{
+  width: 19vw;
+}
+.card:hover{
+    box-shadow: 5px 10px 20px 2px rgba(255, 255, 255, 0.2) !important;
+    transition: all 0.7s linear;
+}
+
+  .custom-card-0.animate__animated.animate__fadeInUp{
+  --animate-duration: 2.4s
+    
+  }
+  
+  .custom-card-1.animate__animated.animate__fadeInUp{
+  --animate-duration: 2.6s
+
+  }
+  .custom-card-2.animate__animated.animate__fadeInUp{
+  --animate-duration: 2.8s
+  }
+  .custom-card-3.animate__animated.animate__fadeInUp{
+    --animate-duration: 3s
+  }
+  .custom-card-4.animate__animated.animate__fadeInUp{
+    --animate-duration: 3.2s
+  }
+  .custom-card-5.animate__animated.animate__fadeInUp{
+    --animate-duration: 3.4s
+  }
+  .custom-card-6.animate__animated.animate__fadeInUp{
+    --animate-duration: 3.6s
+  }
+  .custom-card-7.animate__animated.animate__fadeInUp{
+    --animate-duration: 3.8s
+  }
+  .custom-card-8.animate__animated.animate__fadeInUp{
+    --animate-duration: 4.0s
+  }
+  .custom-card-9.animate__animated.animate__fadeInUp{
+    --animate-duration: 4.2s 
+  }
+  .custom-card-10.animate__animated.animate__fadeInUp{
+    --animate-duration: 4.4s
+  }
+  .custom-card-11.animate__animated.animate__fadeInUp{
+    --animate-duration: 4.6s
+  }
+  .custom-card-12.animate__animated.animate__fadeInUp{
+    --animate-duration: 4.8s 
+  }
+
+

@@ -1,0 +1,66 @@
+*{
+    border: none;
+}
+
+.card{
+    margin-top: 5rem;
+}
+
+.card-body{
+    padding: 2rem 0 !important;
+}
+.card-text{
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+/* .overflow{
+    overflow:hidden
+} */
+
+.card-img-top{
+    transition: all 0.2s ease-in-out;
+    border-bottom: 0px;
+}
+.card-img-top:hover{
+    transform: scale(1.3);
+} 
+.App.h1{
+    margin-top: 50px;
+}
+.custom-card{
+    width: 25vw !important;
+    margin: 20px;
+}
+h1.hola-0{
+
+    animation-delay: 0.25s !important;
+}
+h1.hola-1{
+
+    animation-delay: 0.5s !important;
+}
+h1.hola-2{
+
+    animation-delay: 0.75s !important;
+}
+h1.hola-3{
+
+    animation-delay: 1s !important;
+}
+h1.hola-4{
+
+    animation-delay: 1.25s !important;
+}
+h1.hola-5{
+
+    animation-delay: 1.5s !important;
+}
+h1.hola-6{
+
+    animation-delay: 1.75s !important;
+}
+h1.hola-7{
+
+    animation-delay: 2s !important;
+}
+
