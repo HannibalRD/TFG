@@ -1,4 +1,4 @@
-
+// #00abcd #d3f8ff
 
 const NewsBoard = () => {
 return (
@@ -11,7 +11,7 @@ return (
         <h1>SUBMON participa en la campaña de seguimiento/evaluación de fanerógamas marinas dentro de las Estrategias Marinas</h1>
             <p>Para lograrlo, la campaña de estudio se basa en la medición de una serie de parámetros cuya finalidad consiste en evaluar el estado en que se encuentran las especies de fanerógamas marinas mencionadas anteriormente, así como en analizar el impacto de las presiones antrópicas en estas praderas. Más concretamente, la campaña se centra en identificar y establecer las zonas y estaciones de muestreo en Cataluña para Posidonia oceanica, Cymodocea nodosa y Zostera noltei. La obtención de datos se realizará a través de muestreos con buceo y transectos de vídeo arrastrado.</p>
         {/* <a>https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/</a> */}
-        <a className="btn btn-outline-danger" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
+        <a className="btn btn-outline-info" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
         </li>
         </ul>
     </div>
@@ -20,7 +20,7 @@ return (
         <li>
         <h1>Título de la noticia 1</h1>
         <p>Para lograrlo, la campaña de estudio se basa en la medición de una serie de parámetros cuya finalidad consiste en evaluar el estado en que se encuentran las especies de fanerógamas marinas mencionadas anteriormente, así como en analizar el impacto de las presiones antrópicas en estas praderas. Más concretamente, la campaña se centra en identificar y establecer las zonas y estaciones de muestreo en Cataluña para Posidonia oceanica, Cymodocea nodosa y Zostera noltei. La obtención de datos se realizará a través de muestreos con buceo y transectos de vídeo arrastrado.</p>
-        <a className="btn btn-outline-danger" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
+        <a className="btn btn-outline-info" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
 
         </li>
         </ul>
@@ -30,7 +30,7 @@ return (
         <li>
         <h1>Título de la noticia 1</h1>
         <p>Para lograrlo, la campaña de estudio se basa en la medición de una serie de parámetros cuya finalidad consiste en evaluar el estado en que se encuentran las especies de fanerógamas marinas mencionadas anteriormente, así como en analizar el impacto de las presiones antrópicas en estas praderas. Más concretamente, la campaña se centra en identificar y establecer las zonas y estaciones de muestreo en Cataluña para Posidonia oceanica, Cymodocea nodosa y Zostera noltei. La obtención de datos se realizará a través de muestreos con buceo y transectos de vídeo arrastrado.</p>
-        <a className="btn btn-outline-danger" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
+        <a className="btn btn-outline-info" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
 
         </li>
         </ul>
@@ -40,7 +40,7 @@ return (
         <li>
         <h1>Título de la noticia 1</h1>
         <p>Para lograrlo, la campaña de estudio se basa en la medición de una serie de parámetros cuya finalidad consiste en evaluar el estado en que se encuentran las especies de fanerógamas marinas mencionadas anteriormente, así como en analizar el impacto de las presiones antrópicas en estas praderas. Más concretamente, la campaña se centra en identificar y establecer las zonas y estaciones de muestreo en Cataluña para Posidonia oceanica, Cymodocea nodosa y Zostera noltei. La obtención de datos se realizará a través de muestreos con buceo y transectos de vídeo arrastrado.</p>
-        <a className="btn btn-outline-danger" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
+        <a className="btn btn-outline-info" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
 
         </li>
         </ul>
@@ -50,7 +50,7 @@ return (
         <li>
         <h1>Título de la noticia 1</h1>
         <p>Para lograrlo, la campaña de estudio se basa en la medición de una serie de parámetros cuya finalidad consiste en evaluar el estado en que se encuentran las especies de fanerógamas marinas mencionadas anteriormente, así como en analizar el impacto de las presiones antrópicas en estas praderas. Más concretamente, la campaña se centra en identificar y establecer las zonas y estaciones de muestreo en Cataluña para Posidonia oceanica, Cymodocea nodosa y Zostera noltei. La obtención de datos se realizará a través de muestreos con buceo y transectos de vídeo arrastrado.</p>
-        <a className="btn btn-outline-danger" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
+        <a className="btn btn-outline-info" href="https://www.submon.org/es/submon-participa-en-la-campana-de-seguimiento-y-evaluacion-de-fanerogamas-marinas-liderada-por-el-ieo-dentro-de-las-estrategias-marinas/">Mas información</a>
 
         </li>
         </ul>

@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, NavLink, Routes} from 'react-router-dom
 
 const LazyTea = React.lazy(() => import('./NewsBoard'));
 const LazyTeas = React.lazy(() => import('./Fase2'))
+const LazyTeas1 = React.lazy(() => import('./AppEmail'))
 
 
 function Navbars() {
@@ -37,7 +38,7 @@ function Navbars() {
                   Peces
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={NavLink} to='/blog'>Blog</Nav.Link>
+              <Nav.Link as={NavLink} to='/AppEmail'>Blog</Nav.Link>
               <Nav.Link as={NavLink} to='/about-us'>About us</Nav.Link>
               <Nav.Link as={NavLink} to='/contact-us'>Contact us</Nav.Link>
             </Nav>
@@ -54,6 +55,9 @@ function Navbars() {
               {showTea && (
                   <Route path='/Fase2' element={<Suspense fallback={<div>Loading...</div>}><LazyTeas/></Suspense>}/>
                 )}
+              {showTea && (
+                  <Route path='/AppEmail' element={<Suspense fallback={<div>Loading...</div>}><LazyTeas1/></Suspense>}/>
+              )}
               
             </Routes>
       </div>
