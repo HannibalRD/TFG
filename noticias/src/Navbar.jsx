@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Route, NavLink, Routes} from 'react-router-dom
 const LazyTea = React.lazy(() => import('./NewsBoard'));
 const LazyTeas = React.lazy(() => import('./Fase2'))
 const LazyTeas1 = React.lazy(() => import('./AppEmail'))
+const LazyTeas2 = React.lazy(() => import('./Fase3'))
+const LazyTeas3 = React.lazy(() => import('./Fase4'))
 
 
 function Navbars() {
@@ -39,8 +41,8 @@ function Navbars() {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={NavLink} to='/AppEmail'>Blog</Nav.Link>
-              <Nav.Link as={NavLink} to='/about-us'>About us</Nav.Link>
-              <Nav.Link as={NavLink} to='/contact-us'>Contact us</Nav.Link>
+              <Nav.Link as={NavLink} to='/Fase3'>About us</Nav.Link>
+              <Nav.Link as={NavLink} to='/Fase4'>Contact us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -58,6 +60,12 @@ function Navbars() {
               {showTea && (
                   <Route path='/AppEmail' element={<Suspense fallback={<div>Loading...</div>}><LazyTeas1/></Suspense>}/>
               )}
+              {showTea && (
+                  <Route path='/Fase3' element={<Suspense fallback={<div>Loading...</div>}><LazyTeas2/></Suspense>}/>
+              )}
+              {showTea && (
+                  <Route path='/Fase4' element={<Suspense fallback={<div>Loading...</div>}><LazyTeas3/></Suspense>}/>
+              )}
               
             </Routes>
       </div>
@@ -66,7 +74,7 @@ function Navbars() {
         
       </div>
     </div>
-         
+
         </div>
     </Router>
   );

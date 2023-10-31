@@ -23,7 +23,10 @@ import { animateScroll as scroll } from 'react-scroll';
 const cards = [
 {
     id:1,
-    title:'Fazt Web',
+    title:'Gobio de arena',
+    localizacion:'Hola',
+    extincion:'.',
+    longitud:'.',
     image: image5,
     url: 'http://google.com'
 
@@ -31,88 +34,130 @@ const cards = [
 {
     
     id:2,
-    title:'Fazt Blog',
+    title:'Zifio cuvier',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image6,
     url: 'http://google.com'
 },
 {
     
     id:3,
-    title:'',
+    title:'Rorcual común',
     peso:'3kg',
     image: image9,
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     url: 'http://google.com'
 },{
     id:4,
-    title:'Fazt Web',
+    title:'Urta',
     peso:'3kg',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image7,
     url: 'http://google.com'
 
 },{
     id:5,
-    title:'Fazt Web',
+    title:'Sargo real',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image8,
     url: 'http://google.com'
 
 },{
     id:6,
     title:'Mona amarilla',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image4,
     url: 'http://google.com'
 
 },{
     id:7,
-    title:'Fazt Web',
+    title:'Salmonete de roca',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image10,
     url: 'http://google.com'
 
 },{
     id:8,
-    title:'Fazt Web',
+    title:'Oblada',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image11,
     url: 'http://google.com'
 
 },{
     id:9,
-    title:'Fazt Web',
+    title:'Mona',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image12,
     url: 'http://google.com'
 
 },{
     id:10,
-    title:'Fazt Web',
+    title:'Borodon tordo',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image13,
     url: 'http://google.com'
 
 },{
     id:11,
-    title:'Fazt Web',
+    title:'Chaparudo',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image14,
     url: 'http://google.com'
 
 },{
     id:12,
-    title:'Fazt Web',
+    title:'Delfin comun',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image15,
     url: 'http://google.com'
 
 },{
     id:13,
-    title:'Fazt Web',
+    title:'Calderongris',
+    localizacion:'.' ,
+    extincion:'.' ,
+    longitud:'.' ,
     image: image16,
     url: 'http://google.com'
 
 },
 {
   id:14,
-  title:'Fazt Web',
+  title:'Gabineta rosada',
+  localizacion:'.' ,
+  extincion:'.' ,
+  longitud:'.' ,
   image: image18,
   url: 'http://google.com'
 
 },{
   id:15,
-  title:'Fazt Web',
+  title:'Cachalote',
+  localizacion:'.' ,
+  extincion:'.' ,
+  longitud:'.' ,
   image: image17,
   url: 'http://google.com'
 
@@ -121,7 +166,17 @@ const cards = [
 const itemsPerPage = 12;
 function Cards() {
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [searchTitle, setSearchTitle] = useState('');
+  const clearSearch = () => {
+    setSearchTitle('');
+  };
+  const filteredCards = cards.filter((card) => {
+    if (searchTitle === '') {
+      return true; // Si no se ha ingresado un título, mostrar todas las cartas.
+    } else {
+      return card.title.toLowerCase().includes(searchTitle.toLowerCase());
+    }
+  });
   const startIndex = (currentPage - 1) * itemsPerPage;
   let endIndex = startIndex + itemsPerPage;
 
@@ -129,7 +184,7 @@ function Cards() {
     endIndex = cards.length;
   }
 
-  const currentPageData = cards.slice(startIndex, endIndex);
+  const currentPageData = filteredCards.slice(startIndex, endIndex);
 
   const goToPrevPage = () => {
     if (currentPage > 1) {
@@ -149,13 +204,26 @@ function Cards() {
   return (
     <>
       <div className='container d-flex justify-content-center align-items-center cards-container'>
+        
         <div className='row'>
+        <input
+            type="text"
+            placeholder="Ejemplo Cachalote"
+            value={searchTitle}
+            onChange={(e) => setSearchTitle(e.target.value)}
+          />
+          <button className='mt-5 mb-5' onClick={clearSearch}>
+    Limpiar búsqueda
+  </button>
           {currentPageData.map((card, index) => (
             <div className='col custom-card' key={card.id}>
               <Card
                 title={card.title}
                 image={card.image}
                 peso={card.peso}
+                localizacion={card.localizacion}
+                extincion={card.extincion}
+                longitud={card.longitud}
                 url={card.url}
                 text={card.text}
                 customClassName={`custom-card-${index}`}
@@ -165,6 +233,7 @@ function Cards() {
         </div>
       </div>
       <div className='d-flex justify-content-center align-items-center'>
+      
       <button className='mt-5 mb-5' onClick={goToPrevPage} disabled={currentPage === 1}>
         Anterior
       </button>

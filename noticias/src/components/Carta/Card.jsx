@@ -1,8 +1,8 @@
 import {useState} from 'react'
 import  PropTypes  from "prop-types";
 import './cards.css'
-function Card({title,image,url,text,customClassName,peso}) {
-  const [isCollapsed, setIsCollapsed] = useState(true);
+function Card({title,image,url,text,customClassName,peso,extincion,longitud,localizacion}) {
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
@@ -17,6 +17,9 @@ function Card({title,image,url,text,customClassName,peso}) {
       <div className={` card-body text-light ${isCollapsed ? '' : 'collapse'}`}>
           <h4 className='card-title'>{title}</h4>
           <p className='card-text text-secundary'>Peso: {peso}</p>
+          <p className='card-text text-secundary'>Extincion: {extincion}</p>
+          <p className='card-text text-secundary'>Logitud: {longitud}</p>
+          <p className='card-text text-secundary'>Localización: {localizacion}</p>
             <p className='card-text text-secundary'>{
             text ? text:  "."
             }</p>
@@ -34,7 +37,10 @@ Card.propTypes ={
   image: PropTypes.string,
   text: PropTypes.string,
   customClassName: PropTypes.string,
-  peso: PropTypes.string.isRequired
+  peso: PropTypes.string.isRequired,
+  extincion: PropTypes.string.isRequired,
+  longitud: PropTypes.string.isRequired,
+  localizacion: PropTypes.string.isRequired
 
 }
 
